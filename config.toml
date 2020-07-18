@@ -1,6 +1,6 @@
 baseURL = "https://danny6212000.github.io/"
 languageCode = "zh-tw"
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "tw"
 title = "Web of Danny"
 theme = "anatole"
 summarylength = 10
@@ -23,12 +23,12 @@ favicon = "favicons/"
 customCss = []
 customJs = []
 mainSections = ["post"]
-images = ["images/site-feature-image.png"]
+##images = ["images/site-feature-image.png"]
 
 ## Math settings
-[params.math]
-enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
-use = "katex"  # options: "katex", "mathjax". default is "katex".
+##[params.math]
+##enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+##use = "katex"  # options: "katex", "mathjax". default is "katex".
 
 ## Social links
 ##[[params.socialIcons]]
