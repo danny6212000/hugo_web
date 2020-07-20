@@ -8,7 +8,7 @@ on:
   push:
     branches: [ master ]
 env:
-  REMOTE: danny6212000/dammu6212000.github.io.git
+  REMOTE: danny6212000/danny6212000.github.io.git
   DEST: public
   TOKEN: ${{ secrets.hugogittoken }}
 
@@ -22,12 +22,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
       with:
-        fetch-depth: 1
-    - name: get theme
-      run: git clone https://github.com/lxndrblz/anatole.git themes/anatole    
-  
+        submoudle: true
+
     - name: Build and deploy
         #env:
         #  HUGO_ARGS:
